@@ -1,0 +1,13 @@
+.container-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.loading {
+    color: white;
+    font-size: 3em;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 15px;
+}
