@@ -1,10 +1,12 @@
-import React from 'react';
+import React  from 'react';
+import Cards from './Cards';
 
 const Pokedex = () => {
+
     return (
-        <div>
-            <h1>Hola Mundo</h1>
-        </div>
+        <>
+            <Cards />
+        </>
     )
 }
 
