@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from 'react';
 
-export const usePokemon = (cant = 10) => {
+export const usePokemon = (cant = 120) => {
     
     const url = `https://pokeapi.co/api/v2/pokemon/?limit=${cant}`;
 

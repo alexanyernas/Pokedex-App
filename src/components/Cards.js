@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import CardItem from './CardItem';
 import { usePokemon } from '../hooks/usePokemon';
+import '../styles/Cards.css';
 
 const Cards = () => {
 
-    const [ loading, setLoading ] = useState(true);
+    const [ loading, setLoading ] = useState( true );
     const pokemons = usePokemon();
 
     setTimeout(() => {
@@ -12,7 +13,7 @@ const Cards = () => {
     }, 1000);
 
     return (
-        <div>
+        <div className="card-group">
            {
                loading ? (
                    <p>Loading...</p>
