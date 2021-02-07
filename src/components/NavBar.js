@@ -5,13 +5,11 @@ import '../styles/NavBar.css';
 
 const NavBar = () => {
 
-    const urlLogo = `${process.env.PUBLIC_URL}/assets/logo.png`;
-
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid">
                 
-                <img src={ urlLogo } alt="Pokemon" width="200" />
+                <img src={ `${process.env.PUBLIC_URL}/assets/logo.png` } alt="Pokemon" width="200" />
 
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                 
