@@ -6,8 +6,10 @@
 }
 
 .loading {
+    animation: fadeIn;
+    animation-duration: 5s;
     color: white;
     font-size: 3em;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Hammersmith One', sans-serif;
     letter-spacing: 15px;
 }

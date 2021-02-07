@@ -1,10 +1,16 @@
 .row {
-    width: 18.5rem;
+    width: 14.7rem;
 }
 
 .card {
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 5px;
+    font-family: 'Hammersmith One', sans-serif;
+    animation: fadeInLeft;
+    animation-duration: 2s;
 }
 
+.card-img {
+    animation: bounce;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CardItem from './CardItem';
+import Footer from './Footer';
 import { usePokemon } from '../hooks/usePokemon';
 import '../styles/Cards.css';
 import '../styles/Load.css';
@@ -11,7 +12,7 @@ const Cards = () => {
 
     setTimeout(() => {
         setLoading( false );
-    }, 1000);
+    }, 2000);
 
     return (
         <>
@@ -21,16 +22,19 @@ const Cards = () => {
                         <p className="loading">Loading...</p>
                     </div>
                 ) : (
-                    <div className="card-group">
-                        {
-                            pokemons.map( ( { name, sprites } ) => (
-                                <CardItem
-                                    key= { name }
-                                    data= { { name, sprites }}
-                                />
-                            ))
-                        }
-                    </div>
+                    <>
+                        <div className="card-group">
+                            {
+                                pokemons.map( ( { name, sprites } ) => (
+                                    <CardItem
+                                        key= { name }
+                                        data= { { name, sprites }}
+                                    />
+                                ))
+                            }
+                        </div>
+                        <Footer />
+                    </>
                 )
             }
         </>
