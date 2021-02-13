@@ -7,7 +7,7 @@ const NavBar = () => {
 
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div className="container-fluid">
+            <div className="container">
                 
                 <img src={ `${process.env.PUBLIC_URL}/assets/logo.png` } alt="Pokemon" width="200" />
 
